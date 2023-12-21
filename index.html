@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Einwilligungserklärung</title>
+<link rel="stylesheet" href="static/styles.css">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="title_container">
+        <h1>Einwilligungserklärung</h1>
+    </div>
+
+    <div class="text_container">
+        <p>
+            Hier können Sie Ihre Einwilligungen bezüglich der Nutzung Ihrer Patientendaten und Biomaterialien für
+            Forschungszwecke verwalten. Ausführliche Informationen hierzu sind in folgenden Dokumenten beschrieben:
+        </p>
+
+        <p>
+            <a href=https://www.uk-erlangen.de/einrichtungen/klinikumsvorstand/treuhandstelle/>
+                Patienteninformation
+            </a>
+        </p>
+
+        <p>
+            <a href=https://www.uk-erlangen.de/einrichtungen/klinikumsvorstand/treuhandstelle/>
+                Video zur Einwilligungserklärung
+            </a>
+        </p>
+
+        <p>
+            Lesen Sie sich die Texte durch und setzen Sie Ihre Einwilligung entsprechend Ihrer Vorstellung.
+        </p>
+
+        <p>
+            <u>
+                Ihre Einwilligung wird nur gespeichert, wenn Sie am Ende den Button „Einwilligung speichern“ klicken.
+            </u>
+        </p>
+
+        <div class="button_container">
+            <p>
+                <a href="/add-new-consent">
+                    <button>Start neue Erklärung</button>
+                </a>
+            </p>
+            <p>
+                <a href="/viewconsent">
+                    <button>Einwilligungsdaten ansehen</button>
+                </a>
+            </p>
+            <p>
+                <img src="https://www.uk-erlangen.de/_assets/ad9c8a6411247399e1e0e3c280c7c58e/Images/Uniklinikum-Erlangen.svg"
+                     width="400"
+                     height="50"
+                /></p>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script src="static/script.js"></script>
+
+{% endblock %}
+
+</html>
